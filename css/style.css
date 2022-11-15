@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: 'Graphik LCG bold';
     src: url('../fonts/GraphikLCG-Semibold.woff2') format('woff2'),
         url('GraphikLCG-Semibold.woff') format('woff');
@@ -7,7 +7,7 @@
     font-display: swap;
 }
 
-@font-face {
+@font-face{
     font-family: 'Graphik LCG';
     src: url('../fonts/GraphikLCG-Regular.woff2') format('woff2'),
         url('GraphikLCG-Regular.woff') format('woff');
@@ -58,13 +58,25 @@ body {
     align-items: center;
 }
 
+.a__logo {
+    display: inline-block;
+    transition: all 0.8s ease 0s;
+    transform: scale3d(1, 1, 1);
+}
+
+.a__logo:hover {
+    transform: scale3d(1.5, 1.5, 2);
+    text-shadow: 0 10px 10px grey;
+}
+
 .menu1__list {
     display: flex;
     justify-content: space-between;
     font-weight: 400;
-font-size: 15px;
-line-height: 20px;
+    font-size: 15px;
+    line-height: 20px;
 }
+
 .menu1__list>li {
     padding-right: 57px;
 }
@@ -73,17 +85,22 @@ line-height: 20px;
     margin-right: 150px;
 }
 
+.menu1__list_link:hover {
+    text-shadow: 0 10px 10px grey;
+}
+
 .log {
     font-weight: 600;
-font-size: 16px;
-line-height: 45px;
-text-align: center;
-color: #000000;
-border: 1px solid rgba(0, 0, 0, 0.5);
-border-radius: 0px;
-padding: 1px 36px;
-display: block;
-margin-right: 10px;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+    padding: 1px 36px;
+    display: block;
+    margin-right: 10px;
+    transition: all 0.8s ease 0s;
 }
 
 .header__button {
@@ -93,14 +110,25 @@ margin-right: 10px;
 
 .try {
     font-weight: 600;
-font-size: 16px;
-line-height: 45px;
-text-align: center;
-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF6336;
+    border-radius: 0px;
+    padding: 1px 22px;
+    display: block;
+    transition: all 0.8s ease 0s;
+}
+
+.log:hover {
+    color: #FFFFFF;
 background: #FF6336;
-border-radius: 0px;
-padding: 1px 22px;
-display: block;
+}
+
+.try:hover {
+    color: #000000;
+    background: #EEEEEE;
 }
 
 .header {
@@ -128,13 +156,13 @@ h1 {
 
 .span__h1_big {
     font-size: 25px;
-line-height: 35px;
+    line-height: 35px;
 }
 
 .span__h1_small {
     font-weight: 400;
-font-size: 15px;
-line-height: 25px;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 .block__h1_text {
@@ -169,19 +197,20 @@ line-height: 25px;
 
 .h2__text {
     font-weight: 600;
-font-size: 50px;
-line-height: 60px;
-text-align: center;
-display: block;
-max-width: 720px;
-padding-top: 108px;
-padding-bottom: 80px;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    max-width: 720px;
+    padding-top: 108px;
+    padding-bottom: 80px;
 }
 
 .menu2 {
     display: flex;
     justify-content: space-around;
     padding-bottom: 100px;
+    align-items: center;
 }
 
         /* H3 */
@@ -206,10 +235,17 @@ padding-bottom: 80px;
 
 .a__8block {
     font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-display: block;
-margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    margin-top: 30px;
+    transition: all 0.8s ease 0s;
+    display: inline-block;
+}
+
+.a__8block:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .block8__part2 {
@@ -267,16 +303,16 @@ margin-top: 30px;
 
 .h4__cards {
     font-weight: 600;
-font-size: 25px;
-line-height: 35px;
-text-align: center;
-padding: 26px 0 20px;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    padding: 26px 0 20px;
 }
 
 .p__cards {
     font-size: 18px;
-line-height: 25px;
-text-align: center;
+    line-height: 25px;
+    text-align: center;
 }
 
 .card1 {
@@ -303,7 +339,6 @@ text-align: center;
 
 .card6 {
     max-width: 326px;
-
 }
 
 .cards {
@@ -333,7 +368,6 @@ text-align: center;
     max-width: 409px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     align-items: flex-start;
 }
 
@@ -346,6 +380,11 @@ text-align: center;
 
 .a__boost {
     margin-top: 25px;
+}
+
+.a__boost:hover {
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
            /* revolut */
@@ -397,12 +436,12 @@ text-align: center;
 
 .p__cake {
     font-weight: 600;
-font-size: 35px;
-line-height: 50px;
-max-width: 570px;
-border-right: 1px solid black;
-margin: 115px 0 115px 67px;
-padding-right: 67px;
+    font-size: 35px;
+    line-height: 50px;
+    max-width: 570px;
+    border-right: 1px solid black;
+    margin: 115px 0 115px 67px;
+    padding-right: 67px;
 }
 
 .cake__block2_bl1 {
@@ -417,9 +456,9 @@ padding-right: 67px;
 
 .p__bl1 {
     font-size: 15px;
-line-height: 25px;
-letter-spacing: 0.75px;
-max-width: 150px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    max-width: 150px;
 }
 
 .cake__block2 {
@@ -443,16 +482,16 @@ max-width: 150px;
 .h6 {
     max-width: 791px;
     font-weight: 600;
-font-size: 65px;
-line-height: 75px;
-text-align: center;
-margin-top: 165px;
+    font-size: 65px;
+    line-height: 75px;
+    text-align: center;
+    margin-top: 165px;
 }
 
 .p__bird {
     max-width: 539px;
     font-size: 25px;
-line-height: 30px;
+    line-height: 30px;
 }
 
 .bird__block>img {
@@ -475,8 +514,8 @@ line-height: 30px;
     max-width: 784px;
     padding: 119px 0 29px;
     font-weight: 600;
-font-size: 65px;
-line-height: 75px;
+    font-size: 65px;
+    line-height: 75px;
 }
 
 .a__orange {
@@ -502,9 +541,9 @@ footer {
 
 .h3__footer {
     font-weight: 600;
-font-size: 40px;
-line-height: 50px;
-margin-bottom: 28px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 28px;
 }
 
 .logo__footer1 {
@@ -514,8 +553,12 @@ margin-bottom: 28px;
 .a__footer {
     margin-top: 15px;
     font-weight: 600;
-font-size: 20px;
-line-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.a__footer:hover {
+    text-decoration: underline;
 }
 
 .footer__block2 {
@@ -527,13 +570,17 @@ line-height: 30px;
 .h4__footer {
     margin-bottom: 21px;
     font-weight: 600;
-font-size: 20px;
-line-height: 25px;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 .memu4__list_link {
     font-size: 15px;
-line-height: 15px;
+    line-height: 15px;
+}
+
+.memu4__list_link:hover {
+    text-shadow: 0 10px 10px grey;
 }
 
 .footer__block {
@@ -559,8 +606,8 @@ line-height: 15px;
 .span__footer2 {
     max-width: 301px;
     font-size: 12px;
-line-height: 15px;
-margin-left: 15px;
+    line-height: 15px;
+    margin-left: 15px;
 }
 
 .footer2__block2>p {
